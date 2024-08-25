@@ -24,8 +24,4 @@ typedef struct {
     float mass;
 
 } Body;
-
-void initBody(Body *body);
-void freeBody(Body *body);
-
 #endif // BODY_H_

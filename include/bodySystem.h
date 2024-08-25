@@ -4,15 +4,12 @@
 #define BODY_SYSTEM_H_
 
 #include "body.h"
-#define N_BODIES 1000
+#define N_BODIES 10
 
 typedef struct {
     Body *bodies;
     int size;
 } BodySystem;
-
-void initBodySystem(BodySystem *bs);
-void freeBodySystem(BodySystem *bs);
 
 // Function pointer types for the n-body implementation
 typedef void (*InitializeSystemFunc)(BodySystem* system);
